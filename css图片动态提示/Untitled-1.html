@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{
+	margin:0px;
+	padding:opx;}
+/*	img{
+		position:relative;}
+	h3{
+		font-size:18px;
+		position:absolute;
+		top:0px;
+		}
+		p{
+			font-size:14px;
+			position:absolute;
+			top:30px;}*/
+			
+			/*总体设计开始 */
+			figure{
+				position:relative;
+				width:33.33%;
+				overflow:hidden;
+				height:350px;
+				float:left;}
+				figure img{
+					opacity:0.8;
+					transition:all 0.35s;}
+					figure figcaption div{
+						transition:all 0.35s;}
+						figure figcaption .aa{
+						transition:all 0.35s;}
+						figure figcaption .bb{
+						transition:all 0.35s;}
+					figure figcaption p{
+						transition:all 0.35s;}
+						figure figcaption h3{
+						transition:all 0.35s;}
+						figure figcaption {
+						transition:all 0.35s;}
+				figcaption{
+					position:absolute;
+					top:0px;
+					left:0px;
+					font-family:Arial, Helvetica, sans-serif;
+					color:#C60;}
+					@media screen and (max-width:600px){
+						figure{
+								width:100%;}
+						}
+						@media screen and (min-width:601px) and (max-width:1000px){
+							figure{
+								width:50%;}
+						}
+						@media screen and (min-width:1001px){
+							figure{
+								width:33.33%;}
+						}
+						
+						
+							/*总体设计结束 */
+							
+							
+							/*  移动动画开始*/
+						.text1{
+							background:#063;}
+							.text1 figcaption p{
+								background:#FFF;
+								color:#999;
+								margin:3px;
+								text-align:center;
+								transform:translate(-120px,0px)}
+								.text1 figcaption{
+									padding:40px;
+									padding-top:20px;}
+									.text1:hover figcaption p{
+										transform:translate(0,0)}
+										.text1 figcaption p:nth-of-type(1){
+											transition-delay:0.05s;
+											}
+											.text1 figcaption p:nth-of-type(2){
+											transition-delay:0.1s;
+											}
+											.text1 figcaption p:nth-of-type(3){
+											transition-delay:0.15s;
+											}
+											.text1 img{
+												transform:translate(-50px,0);
+												}
+												.text1:hover img{
+												transform:translate(0,0);
+												opacity:0.66;
+												}
+												/*  移动动画结束*/
+												
+												/*  旋转动画开始*/
+												.text2{
+													background:#066;
+													
+													}
+													.text2 figcaption{
+														width:100%;
+														height:100%;
+														
+														}
+													.text2 figcaption div{
+														border:#CCC 2px solid;
+														width:80%;
+														height:80%;
+														position:absolute;
+														top:10%;
+														left:10%;
+														transform:translate(0,-350px) rotate(0deg);
+													
+														}
+														.text2 figcaption h3{
+															margin-top:15%;
+															margin-left:15%;}
+															.text2 figcaption p{
+																transform:translate(0,50px);
+																opacity:0;
+															margin-left:15%;}
+															.text2:hover figcaption p{
+																transform:translate(0,0);
+																opacity:1;}
+															.text2:hover figcaption div{
+																transform:translate(0,0) rotate(360deg);}
+																.text2 img{
+																	}
+																.text2:hover img{
+																	opacity:0.5;
+																	}
+																
+														
+												/*  旋转动画结束*/
+												
+	
+												/*  扭曲动画开始*/
+												.text3{
+													background:#603;
+													}
+													
+												.text3 figcaption{
+														top:30%;
+														left:15%;
+														
+														
+														}
+														.text3 figcaption h3{
+															transform:skew(90deg)
+															}
+															.text3 figcaption p{
+															transform:skew(90deg);
+															transition-delay:0.2s;
+															}
+															.text3:hover figcaption h3{
+															transform:skew(0deg)
+															}
+															.text3:hover figcaption p{
+															transform:skew(0deg);
+															
+															}
+														.text3:hover figcaption{
+															opacity:1;
+															}
+															.text3 img{
+																transform:translate(0,0)}
+															
+															.text3:hover img{
+																transform:translate(0,-50px);
+																opacity:0.66;
+																}
+												
+												/*  扭曲动画结束*/
+												/*  放大动画开始*/
+												.text4{
+													background:#930;
+													}
+													.text4 figcaption{
+														width:100%;
+														height:100%;}
+													.text4:hover img{
+														transform:scale(1.5,1.5);
+														opacity:0.66;}
+														
+															.text4 figcaption h3{
+																margin-top:15%;
+																margin-left:15%;
+															transform:scale(1.5,1.5);
+															opacity:0;
+															}
+															.text4 figcaption p{
+															transform:scale(1.2,1.2);	
+															margin-top:1.5%;
+																margin-left:15%;
+																opacity:0;
+															}
+															.text4:hover figcaption h3{
+															transform:scale(1,1);
+															opacity:1;
+															}
+															.text4:hover figcaption p{
+																opacity:1;
+															transform:scale(1,1);
+															}
+															.text4 figcaption div{
+																position:absolute;
+																border:2px #999933 solid;
+																width:80%;
+																height:80%;
+																top:10%;
+																left:10%;
+																transform:scale(1.2,1.2);
+																opacity:0;}
+																.text4:hover figcaption div{
+																	transform:scale(1,1);
+																opacity:1;
+																	}
+                                                   /*  放大动画结束*/
+												   .text5{
+													   background:#333;}
+													   .text5 figcaption{
+														   width:100%;
+														   height:100%;}
+													   .text5:hover img{
+														   opacity:0.66;}
+														   .text5 figcaption h3{
+															   margin-top:13%;
+															   margin-left:20%;
+															   opacity:0;
+															   transform:translate(0,150px);
+															  }
+															    .text5:hover figcaption h3{
+															   opacity:1;
+															   transform:translate(0,0px)}
+															     .text5 figcaption p{
+														
+															   margin-top:2.5%;
+															   margin-left:20%;
+															   opacity:0;
+															   transform:translate(0,150px);
+															  }
+															 .text figcaption .oo{
+																  position:absolute;
+																	z-index:20;
+																	
+																  } 
+															    .text5:hover figcaption p{
+																	
+															   opacity:1;
+															   transform:translate(0,0px)}
+															    .text5:hover figcaption .tt{
+																	margin-left:50px;
+																	transform:rotate(20deg);
+																	transition:all 0.35s;
+																	color:red;
+																	 z-index:2;
+																	}
+															   .text5 figcaption .mm{
+																 z-index:1;
+																   background:#9C6;
+																   position:absolute;
+																   top:100%;
+																   left:0;
+																   width:120%;
+																   height:120%;
+																   overflow:hidden;
+																  opacity:0;
+																   border:2px solid #9C6;
+																   transform:rotate(0deg);
+																   transform-origin:0 0px;
+																   transition-delay:0.2s}
+																    .text5:hover figcaption .mm{
+																		 transform:rotate(-20deg);
+																		opacity:1;}
+																		
+																		
+                                                   .text6{
+													   background:#633;}
+													   .text6 figcaption{
+														width:100%;
+														height:100%;}
+													   .text6 img{
+														   opacity:0.8;
+														   transform:scale(1.2,1.2);}
+														  
+														    .text6:hover img{
+																opacity:0.66;
+														   transform:scale(1,1);}
+														   .text6 figcaption h3{
+															     margin-top:13%;
+															   margin-left:20%;
+															   transform:translate(0,0) scale(1,1)}
+															    .text6:hover figcaption h3{
+																	
+															   transform:translate(30px,50px) scale(1.2,1.2)}
+															    .text6 figcaption p{
+																	
+															     margin-top:2.5%;
+															   margin-left:20%;
+															   transform:translate(0px,150px);
+															   opacity:0; }
+															    .text6:hover figcaption p{
+																opacity:1;	
+															   transform:translate(0,0)}
+															   .text6 figcaption .aa{
+																   position:absolute;
+																   width:66%;
+																   height:80%;
+																  left:13%;
+																   top:10%;
+																   opacity:0;
+																  border:2px #990033 solid;
+																  border-top:none;
+																  border-bottom:none;
+																   transform:scale(1,0.001)}
+																   .text6:hover figcaption .aa{
+																	   opacity:1;
+																   transform:scale(1,1)}
+																   
+																    .text6 figcaption .bb{
+																   position:absolute;
+																   width:74%;
+																   height:68%;
+																  left:10%;
+																   top:15%;
+																   opacity:0;
+																  border:2px #990033 solid;
+																  border-left:none;
+																  border-right:none;
+																   transform:scale(0.001,1)}
+																   .text6:hover figcaption .bb{
+																	   opacity:1;
+																   transform:scale(1,1)}
+
+
+
+							
+#apDiv1 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 1;
+}
+</style>
+</head>
+
+
+<body>
+
+<figure class="text1">
+<img src="images/QQ截图20160322152752.png" />
+<figcaption>
+<h3>Apink</h3>
+<p>孙娜恩</p>
+<p>孙娜恩</p>
+<p>孙娜恩</p>
+</figcaption>
+</figure>
+
+<figure class="text2">
+<img src="images/QQ截图20160322153510.png" />
+<figcaption>
+<h3>Apink</h3>
+<p>孙娜恩  孙娜恩  孙娜恩</p>
+<div></div>
+</figcaption>
+</figure>
+
+
+
+<figure class="text3">
+<img src="images/QQ截图20160322153603.png"/>
+<figcaption>
+<h3>Apink</h3>
+<p>孙娜孙娜孙娜孙娜孙娜</p>
+</figcaption>
+</figure>
+
+
+<figure class="text4">
+<img src="images/QQ截图20160322153750.png"/>
+<figcaption>
+<h3>Apink</h3>
+<p>孙娜恩</p>
+<div></div>
+</figcaption>
+</figure>
+
+
+
+<figure class="text5">
+<img src="images/QQ截图20160322154251.png"/>
+
+<figcaption>
+<h3>Apink</h3>
+<div class="oo"><p>孙娜恩</p>
+</div>
+<div class="mm" >孙娜恩</div>
+</figcaption>
+</figure>
+
+
+
+
+<figure class="text6">
+<img src="images/QQ截图20160322154413.png"/>
+<figcaption>
+<h3>Apink</h3>
+<p>孙娜恩</p>
+<div class="aa"></div>
+<div class="bb"></div>
+</figcaption>
+</figure>
+
+
+
+
+<figure>
+<img src="images/QQ截图20160322154413.png"/>
+<figcaption>
+<h3>Apink</h3>
+<p>孙娜恩</p>
+</figcaption>
+</figure>
+
+
+</body>
+</html>

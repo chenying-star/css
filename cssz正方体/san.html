@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{
+	margin:0;
+	padding:0;}
+
+	
+			/*
+	.san{
+		width:400px;
+		height:200px;
+		background:#F63;
+		position:absolute;
+		 color:white;
+            font-weight:bold;
+            font-size:120px;
+            line-height:200px;
+            text-align:center;
+		 }
+		 .sann{
+			 width:200px;
+		height:200px;
+		background:#F63;
+		position:absolute;
+		color:white;
+            font-weight:bold;
+            font-size:120px;
+            line-height:200px;
+            text-align:center;
+		}
+		.sannn{
+			 width:200px;
+		height:200px;
+		background:#F63;
+		position:absolute;
+		color:white;
+            font-weight:bold;
+            font-size:120px;
+            line-height:200px;
+            text-align:center;
+			left:200px;
+		}
+		 
+			 #face1{}
+			 #face2{
+				 -webkit-transform-origin:left;
+				 -webkit-transform:rotateY(90deg);
+				
+				 }
+				  #face3{
+				
+				 -webkit-transform-origin:right;
+				 -webkit-transform:rotateY(-90deg);
+				
+			 z-index:2;
+				 }
+				  #face4 {
+            -webkit-transform-origin:top;
+            -webkit-transform: rotateX(-90deg);
+        }
+				  #face5 {
+            -webkit-transform-origin:bottom;
+            -webkit-transform: rotateX(90deg);
+        }
+        #face6 {
+            -webkit-transform: translateZ(-200px);
+        }
+		*/
+		#op{
+			position:relative;
+			left:50%;
+			margin-left:-360px;}
+		 #op .range-control{width:721px;
+		}
+		.trangle{
+		perspective:800px;
+		perspective-origin:50% 50%;}
+		.to{
+			 position: relative;
+			 margin:100px auto;
+            height:200px;
+            width:400px;
+			transform-style:preserve-3d;
+			transition:all 1s ease-in;}
+			.san{
+				width:0px;
+				height:0px;
+				border:100px solid transparent;
+				border-bottom-color:#666699;
+				position:absolute;
+				left:50%;
+				margin-left:-100px;
+				}
+				a{
+					left:100px;}
+				#face1{
+					transform-origin:bottom;
+					transform:rotateX(30deg);}
+				#face2{
+					transform-origin:left;
+					transform:rotateY(90deg);
+					}
+					#face3{
+					transform-origin:right;
+					transform:rotateY(-90deg);}
+					#face4{
+					
+					transform:translateZ(-200px)}
+</style>
+<script>
+function rotate(){
+	var x=document.getElementById('bianX').value;
+	var y=document.getElementById('bianY').value;
+	var z=document.getElementById('bianZ').value;
+	document.getElementById('xx').innerText=x;
+	document.getElementById('yy').innerText=y;
+	document.getElementById('zz').innerText=z;
+	document.getElementById('to').style.transform="rotateX("+x+"deg) rotateY("+y+"deg) rotate("+z+"deg)";
+	}
+	
+	/*
+<div class="trangle">
+    <div class="to" id="to">
+    <div class="san" id="face1">1</div>
+    <div class="sann" id="face2">2</div>
+    <div class="sannn" id="face3">3</div>
+    <div class="san" id="face4">4</div>
+    <div class="san" id="face5">5</div>
+    <div class="san" id="face6">6</div>
+    </div>
+</div>
+*/
+</script>
+</head>
+
+<body>
+<div class="trangle">
+    <div class="to" id="to">
+     <div class="san" id="face1">1</div>
+      <div class="san a" id="face2">2</div>
+       <div class="san" id="face3">3</div>
+        <div class="san" id="face4">4</div>
+    </div>
+    </div>
+    
+<div id="op">
+<p>rotateX:<a id="xx">x</a></p>
+<input type="range" min="-360" max="360" value="0" id="bianX" class="range-control" onchange="rotate()" />
+<p>rotateY:<a id="yy">y</a></p>
+<input type="range" min="-360" max="360" value="0" id="bianY" class="range-control" onchange="rotate()"/>
+<p>rotateZ:<a id="zz">z</a></p>
+<input type="range" min="-360" max="360" value="0" id="bianZ" class="range-control" onchange="rotate()"/>
+</div>
+</body>
+</html>
